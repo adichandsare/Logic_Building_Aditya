@@ -1,0 +1,42 @@
+//////////////////////////////////////////////////////////////////
+
+//  ADDITION OF TWO NUMBERS USING FUNCTION (19-4-2022)              
+//  Function name - 
+//  Description - 
+//  Input - 
+//  Output - 
+//  Date - 19-4-2022
+//  Author - Aditya Chandsare
+
+///////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+void Display(int iNo)
+{
+    int iCnt=0;
+    if(iNo<0)                           //Updator
+    {
+        iNo=-iNo;
+    }
+    /*
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+    */
+   iCnt=1;
+   while(iCnt<=iNo)
+   {
+       printf("%d\n",iCnt);
+       iCnt++;
+   }
+}
+int main()
+{
+    int iValue=0;
+    printf("Enter The Number:\n");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+    return 0;
+}
